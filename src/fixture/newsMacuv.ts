@@ -1,29 +1,14 @@
-import { NewsItem } from "../types/new";
-
-export const newsList: NewsItem[] = [
-  { id: 1, 
-    time: "17:00",  
-    desc: "idrdfsdfk1",
-    link: "/", 
-},
-  { id: 2, 
-    time: "16:00", 
-    desc: "idk1", 
-    link: "/", 
- },
-  { id: 3, 
-    time: "15:00", 
-    desc: "idk22",
-    link: "/", 
-    },
-{ id: 4, 
-    time: "14:00", 
-    desc: "isadasdadk1", 
-    link: "/", 
-},
-  { id: 5, 
-    time: "13:00", 
-    desc: "idsdadasdk1", 
-    link: "/", 
-},
-];
+import { TextComponent } from "../types/new"
+export const valueArray: TextComponent[] = [
+{
+    title: "Sunsetting Create React App",
+    date: "February 13, 2025",
+    desc: "Today, we're deprecating Create React App for new apps, and encouraging existing apps to migrate to a framework, or to migrate to a build tool like Vite, Parcel, or RSBuild. We're also providing docs for when a framework isn't a good fit for your project, you want to build your own framework, or you just want to learn how React works by building a React app from scratch...",
+    link:[
+        {
+            link: "/",
+            text: "Read more"
+        }
+    ]
+}
+]

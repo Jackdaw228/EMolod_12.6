@@ -1,7 +1,10 @@
-export type NewsItem = {
-    id: number;
-    time: Date;
-    title: string;
-    link: string;
-    isImportant: boolean;
-  };
+export type TextComponent = { 
+    title: string,
+    date: string,
+    desc: string,
+    link: TextComponentList[];
+}
+type TextComponentList = {
+    link: string,
+    text: string,
+}

@@ -2,8 +2,8 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { newsList} from './fixture/newsMacuv'
-import NewsItemComponent from './components/main/news'
+import { valueArray } from './fixture/newsMacuv'
+import TextComponant from './components/main/news'
 function App() {
   return (
     <>
@@ -15,9 +15,13 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      {newsList.map((news) => (
-        <NewsItemComponent key={news.id} {...news} />
-      ))}
+  {
+    valueArray.map((item)=>(
+      <TextComponant {...item}></TextComponant>
+      
+    ))
+  }
+
     </>
   )
 }
